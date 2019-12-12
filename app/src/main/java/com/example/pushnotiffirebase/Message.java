@@ -1,5 +1,10 @@
 package com.example.pushnotiffirebase;
 
+import com.google.firebase.database.Exclude;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class Message {
     private String title;
     private String notifytext;
@@ -36,5 +41,14 @@ public class Message {
 
     public void setNotifysubtext(String notifysubtext) {
         this.notifysubtext = notifysubtext;
+    }
+
+    @Exclude
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("notifysubtext", notifysubtext);
+        result.put("notifytext", notifytext);
+        result.put("title", title);
+        return result;
     }
 }

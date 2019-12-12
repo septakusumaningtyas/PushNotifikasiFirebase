@@ -82,8 +82,8 @@ public class MainActivity extends AppCompatActivity {
                             }
                             final NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplicationContext(), "YOUR_CHANNEL_ID")
                                     .setSmallIcon(R.mipmap.ic_launcher) // notification icon
-                                    .setContentTitle("UAS Pemrograman Mobile") // title for notification
-                                    .setContentText("Data Siswa Berhasil Ditambahkan!")// message for notification
+                                    .setContentTitle("Notification") // title for notification
+                                    .setContentText("Berhasil memasukkan data!")// message for notification
                                     .setAutoCancel(true); // clear notification after click
                             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                             PendingIntent pi = PendingIntent.getActivity(getApplicationContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);

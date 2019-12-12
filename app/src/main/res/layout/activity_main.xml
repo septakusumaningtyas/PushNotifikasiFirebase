@@ -75,5 +75,10 @@
             android:layout_weight="1"/>
 
     </LinearLayout>
-
+    <ListView
+        android:id="@+id/listNotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearBtn">
+    </ListView>
 </LinearLayout>
